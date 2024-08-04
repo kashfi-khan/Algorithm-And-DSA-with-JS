@@ -196,9 +196,28 @@
       // }
       // reverseArray(data, 0, data.length - 1);
 
-      let data = [23, 3, 5, 66, 32];
-      console.warn(data);
-      data.reverse();
+      //-------------------DIRECT METHOD OF REVERSE ARRAY---------------------//
+
+      // let data = [23, 3, 5, 66, 32];
+      // console.warn(data);
+      // data.reverse();
+      // console.warn(data);
+
+      //-------------------------STACK DATA STRUCTURE-----------------------//
+
+      let data = [];
+      let currentSize = data.length;
+      let maxSize = 2;
+
+      function push(newVal) {
+        if (currentSize <= maxSize) {
+          data[currentSize] = newVal;
+          currentSize++;
+        } else {
+          alert("stack is full you can not add this value " + newVal);
+        }
+      }
+
       console.warn(data);
     </script>
   </head>
