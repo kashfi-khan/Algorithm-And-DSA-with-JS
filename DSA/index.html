@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //------------------------iNSERTION OR TRAVERSING DATA----------------------//
+
+      //   let data = [10, 20, 30, 50, 60];
+      //   let newEl = 40;
+      //   let position = 3;
+      //   console.warn(data);
+      //   for (let i = data.length - 1; i >= 0; i--) {
+      //     if (i >= position) {
+      //       data[i + 1] = data[i];
+      //       if (i == position) {
+      //         data[i] = newEl;
+      //       }
+      //     }
+      //   }
+
+      //  function addValue() {
+      //     let data = [10, 20, 30, 50, 60];
+      //   let newEl = document.getElementById('new').value;
+      //   newEl = parseInt(newEl)
+      //   let position = document.getElementById('position').value;
+      //   console.warn(data);
+      //   for (let i = data.length - 1; i >= 0; i--) {
+      //     if (i >= position) {
+      //       data[i + 1] = data[i];
+      //       if (i == position) {
+      //         data[i] = newEl;
+      //       }
+      //     }
+      //   }
+      //   console.warn(data)
+      //  }
+
+      //-----------------------------DELETION DATA-------------------//
+
+      // let data = [10,20,30,40,50,60];
+      // let position = 3;
+      // for(let i=position; i<=data.length-1; i++){
+      //     data[i] = data[i+1]
+      // }
+      // data.length = data.length-1
+      // console.warn(data)
+
+      // function deleteHandler(){
+      //     let data = [10,20,30,40,50,60];
+      // let position = document.getElementById('position').value;
+      // position = parseInt(position)
+      // for(let i=position; i<=data.length-1; i++){
+      //     data[i] = data[i+1]
+      // }
+      // data.length = data.length-1
+      // console.warn(data)
+      // }
+
+      //---------------------------SEARCH DATA------------------------//
+
+      // let data = [10,20,30,40,50,30]
+      // let item = 30
+      // let index = undefined
+      // for(i=0; i<data.length; i++){
+      //     if(data[i]==item){
+      //         index=i
+      //         break;
+      //     }
+      // }
+      // console.warn(index)
+
+      //----------------------Interview Question---------------------//
+
+      // let data = [10,20,30,40,50,30]
+      // let result=[]
+      // function searchItem(){
+      //     let item = 30
+      //     for(i=0; i<data.length;i++){
+      //         if(data[i]==item){
+      //             result[result.length] = i
+      //             console.warn(i)
+      //         }
+      //     }
+
+      // }
+
+      // searchItem();
+
+      //-------------------------------MERGE TWO ARRAY----------------------------//
+
+      // let data = [10,20,30,40,50]
+      // let data2 = [2,4,6,8]
+      // let data3 = []
+
+      // for(i=0; i<data.length; i++ ){
+      //     data3[i] = data[i]
+      // }
+      // for(i=0; i<data2.length; i++){
+      //     data3[data3.length] = data2[i]
+      // }
+      // console.warn(data3)
+
+      // let data1 = [2,7,20,15,30,26,45,40]
+      // let data2 = [3,13,28,35,9]
+      // let data3 = []
+      // let d1 = 8, d2 = 5
+      // let
+      // first=d1-1,
+      // second=d2-1
+      // let j = d1 + d2 - 1
+
+      // while(second >= 0){
+      //     let fVal = data1[first]
+      //     let sVal = data2[second]
+
+      //     if (fVal > sVal) {
+      //         data1[j] = fVal
+      //         j--
+      //         first--
+      //     }
+      //     else{
+      //         data2[] = sVal
+      //         i--
+      //         second--
+      //     }
+      // }
+
+      // console.warn(data3)
+
+      //--------------------this is uncomplete------------------------//
+
+      //-------------------------------ARRAY SORTING-----------------------------//
+
+      //   let data = [40, 35, 20, 5, 25, 45, 30];
+
+      //   for (i = 0; i < data.length; i++) {
+      //     for (j = 0; j < data.length; j++) {
+      //       if (data[j] > data[j + 1]) {
+      //         let temp = data[j];
+      //         data[j] = data[j + 1];
+      //         data[j + 1] = temp;
+      //       }
+      //       console.warn(data[j]);
+      //     }
+      //   }
+      //   console.warn(data);
+
+      //---------------------------------RECURSION DS-----------------------------//
+
+      //   function factorial(item) {
+      //     if (item == 0) {
+      //       return 1;
+      //     }
+      //     return item * factorial(item - 1);
+      //   }
+
+      //   let data = 5;
+      //   console.warn(factorial(data));
+
+      //----------------------------INDIRECT RECURSION------------------------------------//
+
+      //   let money = 100;
+      //   let totalApple = 0;
+
+      //   function buyApple(x) {
+      //     if (x > 0) {
+      //       console.warn(`i have ${x} RS ${totalApple}`);
+      //       buyMore(x);
+      //     } else {
+      //       console.warn("i dont have money", x);
+      //     }
+      //   }
+
+      //   function buyMore(x) {
+      //     totalApple++;
+      //     buyApple(x - 10);
+      //   }
+
+      //   buyApple(money);
+    </script>
+  </head>
+  <body>
+    <h1>Working ON DSA</h1>
+  </body>
+</html>
