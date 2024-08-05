@@ -279,32 +279,44 @@
 
       //-----------------REVERSE STRING WITH STACK---------------------//
 
-      let data = [];
-      let currentSize = data.length;
+      // let data = [];
+      // let currentSize = data.length;
 
-      function push(newVal) {
-        data[currentSize] = newVal;
-        currentSize += 1;
-      }
+      // function push(newVal) {
+      //   data[currentSize] = newVal;
+      //   currentSize += 1;
+      // }
 
-      function pop() {
-        currentSize -= 1;
-        data.length = currentSize;
-      }
+      // push(20);
+      // push(40);
+      // console.warn(data);
 
-      function reverseStr(item) {
-        for (let i = 0; i <= item.length; i++) {
-          push();
-        }
-      }
+      // function pop() {
+      //   let lastRemoveItem = data[currentSize - 1];
+      //   currentSize -= 1;
+      //   data.length = currentSize;
+      //   return lastRemoveItem;
+      // }
 
-      push(20);
-      console.warn(data);
+      // pop();
+      // console.warn(data);
 
-      let str = "kashfi";
-      str = str.split("");
-      reverseStr(str);
-      console.warn(str);
+      // function reverseStr(item) {
+      //   for (let i = 0; i < item.length; i++) {
+      //     push(item[i]);
+      //   }
+      //   for (let i = 0; i < item.length; i++) {
+      //     item[i] = pop();
+      //   }
+      // }
+
+      // let str = "kashfi";
+      // console.warn(str);
+      // str = str.split("");
+      // reverseStr(str);
+      // console.warn(str.join(""));
+
+      //-------------------------------------------------------//
     </script>
   </head>
   <body>
