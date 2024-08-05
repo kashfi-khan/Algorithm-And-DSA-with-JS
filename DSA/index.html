@@ -245,10 +245,45 @@
 
       // console.warn(data);
 
-      //------------------------------------------------------------//
+      //--------------------STACK WITH INPUT AND BUTTON------------------------//
+
+      let data = [];
+      let currentSize = data.length;
+      let maxSize = 2;
+
+      function push() {
+        let newVal = document.getElementById("newValue").value;
+        if (currentSize <= maxSize) {
+          data[currentSize] = newVal;
+          currentSize++;
+          document.getElementById("newValue").value = "";
+        } else {
+          alert("stack is full you can not add this value " + newVal);
+        }
+        console.warn("this value added ", data);
+      }
+
+      function pop() {
+        if (currentSize > 0) {
+          currentSize -= 1;
+          data.length = currentSize;
+          console.warn(data);
+        } else {
+          alert("stack is Empty");
+        }
+      }
+
+      function display() {
+        console.warn(data);
+      }
     </script>
   </head>
   <body>
     <h1>Working ON DSA</h1>
+    <br /><br />
+    <input type="text" placeholder="Enter Stack Element" id="newValue" />
+    <button onclick="push()">Add New Element</button>
+    <button onclick="pop()">Delete Element</button>
+    <button onclick="display()">Display All Element</button>
   </body>
 </html>
