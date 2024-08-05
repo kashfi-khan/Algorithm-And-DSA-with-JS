@@ -247,43 +247,75 @@
 
       //--------------------STACK WITH INPUT AND BUTTON------------------------//
 
+      // let data = [];
+      // let currentSize = data.length;
+      // let maxSize = 2;
+
+      // function push() {
+      //   let newVal = document.getElementById("newValue").value;
+      //   if (currentSize <= maxSize) {
+      //     data[currentSize] = newVal;
+      //     currentSize++;
+      //     document.getElementById("newValue").value = "";
+      //   } else {
+      //     alert("stack is full you can not add this value " + newVal);
+      //   }
+      //   console.warn("this value added ", data);
+      // }
+
+      // function pop() {
+      //   if (currentSize > 0) {
+      //     currentSize -= 1;
+      //     data.length = currentSize;
+      //     console.warn(data);
+      //   } else {
+      //     alert("stack is Empty");
+      //   }
+      // }
+
+      // function display() {
+      //   console.warn(data);
+      // }
+
+      //-----------------REVERSE STRING WITH STACK---------------------//
+
       let data = [];
       let currentSize = data.length;
-      let maxSize = 2;
 
-      function push() {
-        let newVal = document.getElementById("newValue").value;
-        if (currentSize <= maxSize) {
-          data[currentSize] = newVal;
-          currentSize++;
-          document.getElementById("newValue").value = "";
-        } else {
-          alert("stack is full you can not add this value " + newVal);
-        }
-        console.warn("this value added ", data);
+      function push(newVal) {
+        data[currentSize] = newVal;
+        currentSize += 1;
       }
 
       function pop() {
-        if (currentSize > 0) {
-          currentSize -= 1;
-          data.length = currentSize;
-          console.warn(data);
-        } else {
-          alert("stack is Empty");
+        currentSize -= 1;
+        data.length = currentSize;
+      }
+
+      function reverseStr(item) {
+        for (let i = 0; i <= item.length; i++) {
+          push();
         }
       }
 
-      function display() {
-        console.warn(data);
-      }
+      push(20);
+      console.warn(data);
+
+      let str = "kashfi";
+      str = str.split("");
+      reverseStr(str);
+      console.warn(str);
     </script>
   </head>
   <body>
     <h1>Working ON DSA</h1>
     <br /><br />
-    <input type="text" placeholder="Enter Stack Element" id="newValue" />
+
+    <!-------- this code uncomment for stack with input and button -------->
+
+    <!-- <input type="text" placeholder="Enter Stack Element" id="newValue" />
     <button onclick="push()">Add New Element</button>
     <button onclick="pop()">Delete Element</button>
-    <button onclick="display()">Display All Element</button>
+    <button onclick="display()">Display All Element</button> -->
   </body>
 </html>
